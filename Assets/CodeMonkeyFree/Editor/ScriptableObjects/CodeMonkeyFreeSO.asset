@@ -14,39 +14,40 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentVersion: 1.01
   subtype: kitchenchaos
-  lastShownTimestamp: 1786456127
+  lastShownTimestamp: 1786560106
   lastUpdateResponse:
-    version: 1.00
+    version: 1.01
     versionUrl: https://unitycodemonkey.com
-  checkedLastUpdateTimestamp: 1786456127
+  checkedLastUpdateTimestamp: 1786560106
   lastQOTDResponse:
-    questionId: 163
+    questionId: 331
     questionText: What is the purpose of Unity Hub?
     answerA: Provide a space for the community to interact
     answerB: Manage different Unity versions and Projects
     answerC: Dashboard for Unity services
     answerD: 
     answerE: 
-  lastQotdTimestamp: 1786456127
+  lastQotdTimestamp: 1786560106
   lastDynamicHeaderResponse:
-    topImageUrl: https://codemonkeyexternal.blob.core.windows.net/external/Misc/humbleBundleSyntyMar25.png
-    topText: Make ANY game with these awesome Assets! (96% OFF ENDS SOON!)
-    topLink: humblebundle
-    bottomText: Learn Unity DOTS for MASSIVE Performance Boosts! (and make an RTS)
-    bottomLink: dotscourse
-  lastDynamicHeaderTimestamp: 1786456127
+    topImageUrl: https://codemonkeyexternal.blob.core.windows.net/external/Misc/summer2025CodeMonkeyBundle_EndsSoon.png
+    topText: Get 80% OFF on ALL my Courses and Games!!! (ENDS AUGUST)
+    topLink: summerbundle
+    bottomText: DONT MISS the latest important trends, sign up for my FREE Weekly
+      Newsletter!
+    bottomLink: gamedevreport
+  lastDynamicHeaderTimestamp: 1786560106
   websiteLatestMessage:
     text: <a href="https://cmonkey.co/freecourses">Check out all my FREE courses!
       Click here!</a>
-  websiteLatestMessageTimestamp: 1786456127
+  websiteLatestMessageTimestamp: 1786560106
   websiteLatestVideos:
     videos:
-    - youTubeId: ZIg7VoD9ptI
-      title: The FUTURE of Unity in 2025 and BEYOND!
-    - youTubeId: W_XOZAWJF24
-      title: I made the MOST PROFITABLE Game as a Test!
-    - youTubeId: J0KMvH-yFmA
-      title: TOP 10 NEW Games, Made with Unity! (FEBRUARY 2025)
-    - youTubeId: DOSLOa7cnoE
-      title: I SHOULD have done this a long time ago, and YOU too!
-  websiteLatestVideosTimestamp: 1786456127
+    - youTubeId: Hwpbh2fDPlE
+      title: The SECRET WEAPON making Unity 7 AWESOME - CoreCLR Explained
+    - youTubeId: xsQTCKSHte8
+      title: TOP 10 NEW Games, Made with Unity! (JULY 2026)
+    - youTubeId: 26F9uHlPEO0
+      title: WHY this game made $10,000,000!
+    - youTubeId: 2oHitHMNyNw
+      title: WHY Scope Creep DESTROYS Indie Games (and how to stop it)
+  websiteLatestVideosTimestamp: 1786560106
