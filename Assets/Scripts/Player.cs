@@ -3,12 +3,12 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     [SerializeField] private float moveSpeed = 7f;
+    [SerializeField] private GameInput gameInput;
 
     private bool isWalking = false;
     private void Update()
     {
-        Vector2 inputVector = new Vector2(0, 0);
-
+        Vector2 inputVector = gameInput.GetMovementVectorNormalized();
         if (Input.GetKey(KeyCode.W))
         {
             inputVector.y = +1;
