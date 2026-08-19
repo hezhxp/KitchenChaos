@@ -30,7 +30,7 @@ public class Player : MonoBehaviour
         {
             if (raycastHit.transform.TryGetComponent(out ClearCounter clearCounter))
             {
-                /// has clear counter
+                /// has clear counters
                 clearCounter.Interact();
             }
         }
