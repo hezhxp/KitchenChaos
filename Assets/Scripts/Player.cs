@@ -1,10 +1,41 @@
 using UnityEngine;
+using System;
 
 public class Player : MonoBehaviour
 {
     [SerializeField] private float moveSpeed = 7f;
     [SerializeField] private GameInput gameInput;
     [SerializeField] private LayerMask countersLayerMask;
+
+    private void Start()
+    {
+        gameInput.OnInteractAction += GameInput_OnInteractAction;
+    }
+
+    private void GameInput_OnInteractAction(object sender, EventArgs e)
+    {
+        Vector2 inputVector = gameInput.GetMovementVectorNormalized();
+        Vector3 moveDir = new Vector3(inputVector.x, 0f, inputVector.y);
+
+        if (moveDir != Vector3.zero)
+        {
+            lastInteractDir = moveDir;
+        }
+
+        float interactDistance = 2f;
+        if (Physics.Raycast(transform.position, lastInteractDir, out RaycastHit raycastHit, interactDistance, countersLayerMask))
+        {
+            if (raycastHit.transform.TryGetComponent(out ClearCounter clearCounter))
+            {
+                /// has clear counters
+                clearCounter.Interact();
+            }
+        }
+        else
+        {
+            //Debug.Log("----");
+        }
+    }
 
     private bool isWalking = false;
     private Vector3 lastInteractDir;
@@ -30,13 +61,13 @@ public class Player : MonoBehaviour
         {
             if (raycastHit.transform.TryGetComponent(out ClearCounter clearCounter))
             {
-                /// has clear counters
-                clearCounter.Interact();
+                //has clear counters
+                //clearCounter.Interact();
             }
         }
         else
         {
-            Debug.Log("----");
+            //Debug.Log("----");
         }
     }
     public void HandleMovement()
@@ -83,7 +114,7 @@ public class Player : MonoBehaviour
 
         float rotateSpeed = 10f;
         transform.forward = Vector3.Slerp(transform.forward, moveDir, rotateSpeed * Time.deltaTime);
-        Debug.Log(Time.deltaTime);
+        //Debug.Log(Time.deltaTime);
     }
     public bool IsWalking()
     {
